@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+.add_form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 35px;
+    margin-top: 40px;
+}
+
+    fieldset {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 10px;
+    }
+
+.add{
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    /* margin-left: 35px; */
+    margin-top: 20px;
+}
+
+    fieldset {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+.buttons {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+.input {
+    width: 215px;
+}
