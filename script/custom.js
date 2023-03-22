@@ -44,16 +44,6 @@ function requiredValue(select){
     }
 } 
 
-function showHide(){
-    $('input').on('input', function() {
-        if ($(this).val() === '') {
-            $('#submitBtn').hide();
-        } else {
-            $('#submitBtn').show();
-        }
-    });
-}
-
 function checkSKU() {
     $('#sku').keyup(function(){
         var sku = $(this).val();

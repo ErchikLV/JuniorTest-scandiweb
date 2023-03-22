@@ -10,6 +10,7 @@ function deleteAjax(){
                         success:function(){
                             for(var i=0; i<id.length; i++){
                                 $('div#'+id[i]).fadeOut('slow');
+                                $('div#'+id[i]).remove();
                             }
                         }
                     });

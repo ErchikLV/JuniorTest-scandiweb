@@ -15,7 +15,7 @@
 
   <body>
     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="addproduct">Product Add</a>
+        <a class="navbar-brand" href="addproduct.php">Product Add</a>
     </nav>
 
     <section>
@@ -38,7 +38,7 @@
 
             <fieldset>
                 <label for="types">Choose a product type:</label>
-                <select name="types" id="types" onchange="showDiv(this);" required>
+                <select name="types" id="productType" onchange="showDiv(this);" required>
                     <option value="" selected disabled hidden>Choose type</option>
                     <option value="DVD" id="DVD">DVD</option>
                     <option value="Furniture" id="Furniture">Furniture</option>
@@ -94,7 +94,7 @@
 
             <div class="buttons">
                 <button type="submit" id="submitBtn" class="badge badge-light" style="font-size: 17px; margin-right: 8px; cursor: pointer;">Save</button>
-                <a href="index" class="badge badge-light" style="font-size: 17px;">Cancel</a>
+                <a href="index.php" class="badge badge-light" style="font-size: 17px;">Cancel</a>
             </div>
         </form>
     </section>

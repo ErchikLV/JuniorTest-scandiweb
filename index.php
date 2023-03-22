@@ -28,7 +28,7 @@ require_once ('php/Product.php');
         <a class="navbar-brand" href="/">Products List</a>
     </nav>
 
-    <form action="index" method="post">
+    <form action="index" method="post" id="product_form">
         <div class="container">
             <div class="cards" id="cards">
                 <?php 
@@ -39,7 +39,7 @@ require_once ('php/Product.php');
                                 <label class="form-check-label" for="<?=$row['idproduct']. 'a'?>"> 
                                     <div class="card-body text-center">
                                         <div class="form-check" style="margin-right: 80%;">
-                                            <input name="delete_record[]" class="form-check-input" type="checkbox" id="<?=$row['idproduct']. 'a';?>" value="<?=$row['idproduct'];?>">
+                                            <input name="delete_record[]" class="form-check-input delete-checkbox" type="checkbox" id="<?=$row['idproduct']. 'a';?>" value="<?=$row['idproduct'];?>">
                                         </div>
                                         <h6 class="card-subtitle mb-2 text-muted\"><?=$row['sku']?></h6>
                                         <h6 class="card-subtitle mb-2 text-muted\"><?=$row['name']?></h6>
@@ -74,8 +74,8 @@ require_once ('php/Product.php');
         </div>
 
         <div class="buttons">
-            <a href="addproduct" class="badge badge-light" style="font-size: 17px; margin-right: 8px;">Add</a>
-            <button type="button" onclick="deleteAjax()" name="btn_delete" id="btn_delete" class="badge badge-light" style="font-size: 17px; cursor: pointer;">Mass Delete</button>
+            <a href="addproduct.php" class="badge badge-light" style="font-size: 17px; margin-right: 8px;">ADD</a>
+            <button type="button" onclick="deleteAjax()" name="btn_delete" id="btn_delete" class="badge badge-light" style="font-size: 17px; cursor: pointer;">MASS DELETE</button>
         </div>
     </form>
     
